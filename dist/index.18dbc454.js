@@ -579,6 +579,18 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"1SICI":[function(require,module,exports) {
+var _header = require("./header");
+
+},{"./header":"bvS82"}],"bvS82":[function(require,module,exports) {
+let hamburgerEl = document.getElementById("hamburger");
+let closeEl = document.getElementById("close");
+let navMobileEl = document.getElementById("nav-mobile");
+hamburgerEl.addEventListener("click", function() {
+    navMobileEl.style.display = "block";
+});
+closeEl.addEventListener("click", function() {
+    navMobileEl.style.display = "none";
+});
 
 },{}]},["iqNlW","1SICI"], "1SICI", "parcelRequire9c4f")
 

@@ -1,3 +1,125 @@
+.nav-mobile-container {
+  display: none;
+}
 
+header {
+  background-color: #181818;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  display: flex;
+  position: relative;
+}
+
+.logo {
+  color: #fff;
+  padding: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav li {
+  padding: 1rem;
+}
+
+header nav a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #af9f9f;
+}
+
+header nav a:active {
+  color: #fff;
+}
+
+#hamburger {
+  display: none;
+}
+
+#hamburger:hover {
+  cursor: pointer;
+}
+
+@media (width <= 800px) {
+  .nav-desktop-container {
+    display: none;
+  }
+
+  #hamburger {
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.4rem;
+    display: flex;
+  }
+
+  .nav-mobile-container {
+    background-color: #333;
+    width: 40%;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .nav-mobile {
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: .5rem;
+    display: flex;
+  }
+
+  #close {
+    float: right;
+    color: #fff;
+    font-size: 1.4em;
+  }
+
+  #close:hover {
+    cursor: pointer;
+  }
+}
+
+@media (width <= 600px) {
+  .logo {
+    padding: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .nav-mobile-container {
+    width: 70%;
+  }
+}
+
+@media (width <= 400px) {
+  .nav-mobile-container {
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, Times New Roman, Times, serif;
+  line-height: 1.7em;
+}
 
 /*# sourceMappingURL=index.8c1c22dc.css.map */
